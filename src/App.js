@@ -5,10 +5,10 @@ import 'semantic-ui-css/semantic.min.css';
 import history from './history';
 import Nav from './components/Menu'
 import Home from './components/Home'
-import GroupCreate from './components/GroupCreate'
-import Jokes from './components/Jokes'
-import Collections from './components/Collections'
-import Groups from './components/Groups'
+import NewGroup from './components/NewGroup'
+import JokesContainer from './components/JokesContainer'
+import CollectionsContainer from './components/CollectionsContainer'
+import GroupContainer from './components/GroupContainer'
 
 // functional compoennt
 const App = () => (
@@ -17,10 +17,10 @@ const App = () => (
 
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/new" component={GroupCreate} />
-      <Route exact path="/groups" component={Groups} />
-      <Route exact path="/all" component={Jokes}/>
-      <Route exact path="/collections" component={Collections}/>
+      <Route exact path="/new" component={NewGroup} />
+      <Route exact path="/groups" component={GroupContainer} />
+      <Route exact path="/all" component={JokesContainer}/>
+      <Route exact path="/collections" component={CollectionsContainer}/>
     </Switch>
   </Router>
 );

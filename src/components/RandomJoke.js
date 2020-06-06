@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Container, Header } from 'semantic-ui-react'
 
-import { fetchJokeOfTheDay } from '../actions/jokeAction'
+import { fetchRandomJoke } from '../actions/jokeAction'
 
-class JokeOfTheDay extends Component {
+class RandomJoke extends Component {
   componentDidMount() {
-    this.props.fetchJokeOfTheDay();
+    this.props.fetchRandomJoke();
   }
 
 
@@ -34,4 +34,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { fetchJokeOfTheDay })(JokeOfTheDay);
+export default connect(mapStateToProps, { fetchRandomJoke })(RandomJoke);

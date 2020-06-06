@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import { addJokeToGroupCollections } from '../actions/groupActions'
 
 // functional stateless component
-const JokeDetail = (props) => {
+const Joke = (props) => {
 
   const renderJokeDetail = () => {
     if (props.selectedJoke) {
@@ -50,4 +50,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
   addJokeToGroupCollections
 }, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(JokeDetail)
+export default connect(mapStateToProps, mapDispatchToProps)(Joke)

@@ -8,7 +8,7 @@ import JokeUpvote from '../components/JokeUpvote';
 import JokeDownvote from '../components/JokeDownvote'
 
 // functional stateless component
-const CollectionJokes = (props) => {
+const Collection = (props) => {
     if (props.currentGroup) {
       return (
         <Container>
@@ -63,4 +63,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 removeJokeFromGroupCollections
 }, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(CollectionJokes)
+export default connect(mapStateToProps, mapDispatchToProps)(Collection)

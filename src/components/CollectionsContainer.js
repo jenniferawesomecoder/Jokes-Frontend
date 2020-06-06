@@ -1,5 +1,5 @@
 import React from 'react'
-import JokesCollection from '../components/JokesCollection';
+import Collection from '../components/Collection';
 import Header from '../components/Header'
 import { Grid, Divider, Container } from 'semantic-ui-react'
 
@@ -12,7 +12,7 @@ const CollectionsContainer = () => {
 
       <Grid >
         <Grid.Column>
-          <JokesCollection />
+          <Collection />
         </Grid.Column>
       </Grid>
     </Container>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Message, Button } from 'semantic-ui-react'
-import  JokeOfTheDay  from '../components/JokeOfTheDay'
+import  RandomJoke  from '../components/RandomJoke'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Home = () => {
       <Header/>
 
       <Message floating>
-        <JokeOfTheDay />
+        <RandomJoke />
       </Message>
 
       <Button as={Link} to="/groups" color='green'>View All Groups!</Button>

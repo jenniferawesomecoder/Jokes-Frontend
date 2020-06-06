@@ -13,7 +13,7 @@ const requestConfig = {
   }
 };
 
-export const fetchJokeOfTheDay = () => {
+export const fetchRandomJoke = () => {
   return dispatch => {
     fetch (API_BASE_URL, requestConfig)
       .then(response => response.json())
