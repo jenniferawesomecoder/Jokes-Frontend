@@ -30,5 +30,10 @@ body {
 }
 
 .extraContent {
-  text-align: center;
+  text-align: center !important;
+}
+
+.groupDetails {
+  background-color: #ebfff0 !important;
+  box-shadow: none !important;
 }

@@ -39,25 +39,21 @@ class AllGroups extends Component {
         const chosengroup = this.props.currentGroup;
 
         return (
-          <div>
-            <Card.Group centered>
-              <Card fluid>
+              <Card fluid className="groupDetails">
                 <Card.Content>
                   <Card.Header as='h2' textAlign='center'>{chosengroup.title}
                     <Card.Meta content={chosengroup.description} />
                   </Card.Header>
 
-                  <Card.Content extra >
-                    <Button.Group basic vertical widths='5'>
-                      <Button as={Link} to="/all" basic color='violet'>Add Jokes </Button>
-                      <Button as={Link} to="/collections" basic color='green'>Collections</Button>
-                      <Button onClick={() => this.onClick()} basic color='red'>Delete Group</Button>
+                  <Card.Content className="extraContent" >
+                    <Button.Group>
+                      <Button as={Link} to="/all" color='violet'>Add Jokes </Button>
+                      <Button as={Link} to="/collections" color='green'>Collections</Button>
+                      <Button onClick={() => this.onClick()} color='red'>Delete Group</Button>
                     </Button.Group>
                   </Card.Content>
                 </Card.Content>
               </Card>
-            </Card.Group>
-          </div>
         )
       }
     }
@@ -79,7 +75,7 @@ class AllGroups extends Component {
           <Divider />
 
           <Grid.Row>
-            <Grid.Column width={8}>
+            <Grid.Column width={12}>
               <div>{GroupInfo()}</div>
             </Grid.Column>
           </Grid.Row>
