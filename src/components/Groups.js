@@ -39,21 +39,21 @@ class Groups extends Component {
         const chosengroup = this.props.currentGroup;
 
         return (
-              <Card fluid className="groupDetails">
-                <Card.Content>
-                  <Card.Header as='h2' textAlign='center'>{chosengroup.title}
-                    <Card.Meta content={chosengroup.description} />
-                  </Card.Header>
+          <Card fluid className="groupDetails">
+            <Card.Content>
+              <Card.Header as='h2' textAlign='center'>{chosengroup.title}
+                <Card.Meta content={chosengroup.description} />
+              </Card.Header>
 
-                  <Card.Content className="extraContent" >
-                    <Button.Group>
-                      <Button as={Link} to="/all" color='violet'>Add Jokes </Button>
-                      <Button as={Link} to="/collections" color='green'>Collections</Button>
-                      <Button onClick={() => this.onClick()} color='red'>Delete Group</Button>
-                    </Button.Group>
-                  </Card.Content>
-                </Card.Content>
-              </Card>
+              <Card.Content className="extraContent" >
+                <Button.Group>
+                  <Button as={Link} to="/all" color='violet'>Add Jokes </Button>
+                  <Button as={Link} to="/collections" color='green'>Collections</Button>
+                  <Button onClick={() => this.onClick()} color='red'>Delete Group</Button>
+                </Button.Group>
+              </Card.Content>
+            </Card.Content>
+          </Card>
         )
       }
     }
@@ -77,6 +77,13 @@ class Groups extends Component {
           <Grid.Row>
             <Grid.Column width={12}>
               <div>{GroupInfo()}</div>
+
+              <div className="extraContent">
+                <Button.Group>
+                  <Button as={Link} to="/all" color='green'>All Jokes</Button>
+                  <Button as={Link} to="/new" color='green'>Create a Group</Button>
+                </Button.Group>
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>

@@ -15,7 +15,7 @@ class Jokes extends Component {
   }
 
     render() {
-      if (this.props.allJokes && this.props.currentGroup) {
+      if (this.props.allJokes) {
         return (
           <div>
             <Header as='h2'>
@@ -38,26 +38,28 @@ class Jokes extends Component {
                           </Card.Description>
                         </Card.Content>
 
-                        <Card.Content extra className="extraContent">
+                        {this.props.currentGroup && <Card.Content extra className="extraContent">
                           <Popup
                             trigger={<Button color="green" onClick={() => this.props.selectJoke(joke)} content="View Joke"/>}
                             content={<Joke />}
                             on='click'
                             position='top right'
                           />
-                        </Card.Content>
+                        </Card.Content>}
                       </Card>
                     </Card.Group>
                   </Grid.Column>
                 )}
               </Grid.Row>
             </Grid>
+
+            <div>Please select a group first to add a joke in your collection.</div>
           </div>
         )
       }
 
       return (
-        <div>You must select a group first!</div>
+        <div>No jokes available</div>
       )
     }
 }
