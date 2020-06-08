@@ -3,10 +3,16 @@ import { connect } from 'react-redux'
 import { Item, Button, Popup, Segment } from 'semantic-ui-react'
 import { bindActionCreators } from 'redux';
 
-import { addJokeToGroupCollections } from '../actions/groupActions'
+import { addJokeToGroupCollections } from '../actions/groupActions';
+import history from '../history';
 
 // functional stateless component
 const Joke = (props) => {
+
+  const handleClick = () => {
+    props.addJokeToGroupCollections(props.selectedJoke, props.currentGroup)
+    history.push('/collections')
+  }
 
   const renderJokeDetail = () => {
     if (props.selectedJoke) {
@@ -19,7 +25,7 @@ const Joke = (props) => {
               <br />
 
               <Popup
-                trigger={<Button basic color='green' onClick={() => props.addJokeToGroupCollections(props.selectedJoke, props.currentGroup)} content="Add to Collection"/>}
+                trigger={<Button basic color='green' onClick={handleClick} content="Add to Collection"/>}
                 content={`Added!`}
                 on='click'
                 position='top right'
