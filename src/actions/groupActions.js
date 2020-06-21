@@ -12,7 +12,7 @@ export const createGroup = (formValues) => {
   }
 
   return dispatch => {
-    fetch (`/api/groups`, data)
+    fetch(`https://jokesproject.herokuapp.com/api/groups`, data)
       .then(response => response.json())
       .then(group => {
         console.log('D');
@@ -26,7 +26,7 @@ export const createGroup = (formValues) => {
   export const fetchGroups = () => {
     return (dispatch) => {
       dispatch({ type: 'LOADING_GROUPS' })
-      return fetch('/api/groups')
+      return fetch('https://jokesproject.herokuapp.com/api/groups')
       .then(response => {
         return response.json()
       }).then(groups => {
@@ -46,7 +46,7 @@ export const createGroup = (formValues) => {
   }
 
   return dispatch => {
-    fetch (`/api/groups/${id}`, data)
+    fetch(`https://jokesproject.herokuapp.com/api/groups/${id}`, data)
     .then(response => {
       return response.json()
     }).then (group => {
@@ -60,7 +60,7 @@ export const createGroup = (formValues) => {
 
 export const deleteGroup = group => {
   return dispatch => {
-    fetch ('/api/groups/' + group.id, {
+    fetch('https://jokesproject.herokuapp.com/api/groups/' + group.id, {
             method: "DELETE",
             headers: {
             'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ export const addJokeToGroupCollections = (selectedJoke, group) => {
   }
 
   return dispatch => {
-    fetch (`/api/groups/${id}/add_to_collections`, data)
+    fetch(`https://jokesproject.herokuapp.com/api/groups/${id}/add_to_collections`, data)
       .then(response => response.json())
       .then(jokes => dispatch({
         type: 'ADD_TO_COLLECTIONS',
@@ -102,7 +102,7 @@ export const removeJokeFromGroupCollections = (selectedJoke, group) => {
   }
 
   return dispatch => {
-    fetch (`/api/groups/${id}/remove_from_collections`, data)
+    fetch(`https://jokesproject.herokuapp.com/api/groups/${id}/remove_from_collections`, data)
       .then(response => response.json())
       .then(jokes => dispatch({
         type: 'REMOVE_FROM_COLLECTIONS',

@@ -15,7 +15,7 @@ const requestConfig = {
 
 export const fetchRandomJoke = () => {
   return dispatch => {
-    fetch (API_BASE_URL, requestConfig)
+    fetch(API_BASE_URL, requestConfig)
       .then(response => response.json())
       .then(data => {
         dispatch({
@@ -28,7 +28,7 @@ export const fetchRandomJoke = () => {
 
 export default function fetchJokes() {
   return (dispatch) => {
-    fetch(`/api/jokes`)
+    fetch(`https://jokesproject.herokuapp.com/api/jokes`)
     .then(response => response.json())
     .then(data => {
       return dispatch(getJokesAsync(data))});
