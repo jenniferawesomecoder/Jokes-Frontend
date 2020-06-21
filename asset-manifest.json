@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Jokes-Frontend/static/css/main.753deb97.chunk.css",
-    "main.js": "/Jokes-Frontend/static/js/main.cd9a245b.chunk.js",
-    "main.js.map": "/Jokes-Frontend/static/js/main.cd9a245b.chunk.js.map",
+    "main.js": "/Jokes-Frontend/static/js/main.9048580c.chunk.js",
+    "main.js.map": "/Jokes-Frontend/static/js/main.9048580c.chunk.js.map",
     "runtime~main.js": "/Jokes-Frontend/static/js/runtime~main.d39a8d95.js",
     "runtime~main.js.map": "/Jokes-Frontend/static/js/runtime~main.d39a8d95.js.map",
     "static/css/2.4c3b3e00.chunk.css": "/Jokes-Frontend/static/css/2.4c3b3e00.chunk.css",
     "static/js/2.b153a005.chunk.js": "/Jokes-Frontend/static/js/2.b153a005.chunk.js",
     "static/js/2.b153a005.chunk.js.map": "/Jokes-Frontend/static/js/2.b153a005.chunk.js.map",
     "index.html": "/Jokes-Frontend/index.html",
-    "precache-manifest.9cc42f488b94f349688ce0c2703bd107.js": "/Jokes-Frontend/precache-manifest.9cc42f488b94f349688ce0c2703bd107.js",
+    "precache-manifest.32d5c822158bc4f6f407df92feca5661.js": "/Jokes-Frontend/precache-manifest.32d5c822158bc4f6f407df92feca5661.js",
     "service-worker.js": "/Jokes-Frontend/service-worker.js",
     "static/css/2.4c3b3e00.chunk.css.map": "/Jokes-Frontend/static/css/2.4c3b3e00.chunk.css.map",
     "static/css/main.753deb97.chunk.css.map": "/Jokes-Frontend/static/css/main.753deb97.chunk.css.map",
