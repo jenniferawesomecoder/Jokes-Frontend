@@ -7,7 +7,7 @@ To get started using this app do the following:
 
 Clone the repository
 
-git clone 
+git clone
 
 Navigate to the top of the concert buddy client directory
 
@@ -17,7 +17,7 @@ Install required dependencies
 
 npm install
 
-Clone, install, and start the Rails API server. Follow instructions detailed in the README of the link above.
+Clone, install, and start the Rails API server.
 
 Start your React server
 
